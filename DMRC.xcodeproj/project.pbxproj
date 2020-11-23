@@ -15,6 +15,14 @@
 		5390E120256B84F9000067C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5390E11E256B84F9000067C7 /* LaunchScreen.storyboard */; };
 		5390E12B256B84F9000067C7 /* DMRCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E12A256B84F9000067C7 /* DMRCTests.swift */; };
 		5390E136256B84F9000067C7 /* DMRCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E135256B84F9000067C7 /* DMRCUITests.swift */; };
+		5390E14C256B8796000067C7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E14A256B8795000067C7 /* Queue.swift */; };
+		5390E14D256B8796000067C7 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E14B256B8796000067C7 /* LinkedList.swift */; };
+		5390E152256B87A3000067C7 /* Graphable+Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E14E256B87A3000067C7 /* Graphable+Searchable.swift */; };
+		5390E153256B87A3000067C7 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E14F256B87A3000067C7 /* Edge.swift */; };
+		5390E154256B87A3000067C7 /* Graphable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E150256B87A3000067C7 /* Graphable.swift */; };
+		5390E155256B87A3000067C7 /* AdjacencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E151256B87A3000067C7 /* AdjacencyList.swift */; };
+		5390E157256B87B5000067C7 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E156256B87B5000067C7 /* Vertex.swift */; };
+		5390E159256B87D1000067C7 /* BreadthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		5390E131256B84F9000067C7 /* DMRCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMRCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5390E135256B84F9000067C7 /* DMRCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMRCUITests.swift; sourceTree = "<group>"; };
 		5390E137256B84F9000067C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5390E14A256B8795000067C7 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		5390E14B256B8796000067C7 /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		5390E14E256B87A3000067C7 /* Graphable+Searchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Graphable+Searchable.swift"; sourceTree = "<group>"; };
+		5390E14F256B87A3000067C7 /* Edge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
+		5390E150256B87A3000067C7 /* Graphable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graphable.swift; sourceTree = "<group>"; };
+		5390E151256B87A3000067C7 /* AdjacencyList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjacencyList.swift; sourceTree = "<group>"; };
+		5390E156256B87B5000067C7 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,7 @@
 		5390E112256B84F6000067C7 /* DMRC */ = {
 			isa = PBXGroup;
 			children = (
+				5390E15B256B8888000067C7 /* BFSSources */,
 				5390E113256B84F6000067C7 /* AppDelegate.swift */,
 				5390E115256B84F6000067C7 /* SceneDelegate.swift */,
 				5390E117256B84F6000067C7 /* ViewController.swift */,
@@ -106,6 +123,7 @@
 				5390E11C256B84F9000067C7 /* Assets.xcassets */,
 				5390E11E256B84F9000067C7 /* LaunchScreen.storyboard */,
 				5390E121256B84F9000067C7 /* Info.plist */,
+				5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */,
 			);
 			path = DMRC;
 			sourceTree = "<group>";
@@ -126,6 +144,28 @@
 				5390E137256B84F9000067C7 /* Info.plist */,
 			);
 			path = DMRCUITests;
+			sourceTree = "<group>";
+		};
+		5390E15A256B8863000067C7 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				5390E14B256B8796000067C7 /* LinkedList.swift */,
+				5390E14A256B8795000067C7 /* Queue.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		5390E15B256B8888000067C7 /* BFSSources */ = {
+			isa = PBXGroup;
+			children = (
+				5390E15A256B8863000067C7 /* Queue */,
+				5390E156256B87B5000067C7 /* Vertex.swift */,
+				5390E151256B87A3000067C7 /* AdjacencyList.swift */,
+				5390E14F256B87A3000067C7 /* Edge.swift */,
+				5390E150256B87A3000067C7 /* Graphable.swift */,
+				5390E14E256B87A3000067C7 /* Graphable+Searchable.swift */,
+			);
+			path = BFSSources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +299,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5390E154256B87A3000067C7 /* Graphable.swift in Sources */,
+				5390E152256B87A3000067C7 /* Graphable+Searchable.swift in Sources */,
 				5390E118256B84F6000067C7 /* ViewController.swift in Sources */,
+				5390E157256B87B5000067C7 /* Vertex.swift in Sources */,
+				5390E155256B87A3000067C7 /* AdjacencyList.swift in Sources */,
+				5390E153256B87A3000067C7 /* Edge.swift in Sources */,
 				5390E114256B84F6000067C7 /* AppDelegate.swift in Sources */,
+				5390E14D256B8796000067C7 /* LinkedList.swift in Sources */,
 				5390E116256B84F6000067C7 /* SceneDelegate.swift in Sources */,
+				5390E14C256B8796000067C7 /* Queue.swift in Sources */,
+				5390E159256B87D1000067C7 /* BreadthFirstSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
