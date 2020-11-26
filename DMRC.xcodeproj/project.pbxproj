@@ -21,6 +21,8 @@
 		5390E157256B87B5000067C7 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E156256B87B5000067C7 /* Vertex.swift */; };
 		5390E159256B87D1000067C7 /* BreadthFirstSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */; };
 		5390E15D256B91EE000067C7 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E15C256B91EE000067C7 /* SourceViewController.swift */; };
+		5390E15F256B98E8000067C7 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E15E256B98E8000067C7 /* DestinationViewController.swift */; };
+		5390E161256B9EF0000067C7 /* ConfirmTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E160256B9EF0000067C7 /* ConfirmTripViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		5390E156256B87B5000067C7 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
 		5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreadthFirstSearch.swift; sourceTree = "<group>"; };
 		5390E15C256B91EE000067C7 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		5390E15E256B98E8000067C7 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		5390E160256B9EF0000067C7 /* ConfirmTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTripViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 				5390E121256B84F9000067C7 /* Info.plist */,
 				5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */,
 				5390E15C256B91EE000067C7 /* SourceViewController.swift */,
+				5390E15E256B98E8000067C7 /* DestinationViewController.swift */,
+				5390E160256B9EF0000067C7 /* ConfirmTripViewController.swift */,
 			);
 			path = DMRC;
 			sourceTree = "<group>";
@@ -295,8 +301,10 @@
 				5390E154256B87A3000067C7 /* Graphable.swift in Sources */,
 				5390E152256B87A3000067C7 /* Graphable+Searchable.swift in Sources */,
 				5390E157256B87B5000067C7 /* Vertex.swift in Sources */,
+				5390E15F256B98E8000067C7 /* DestinationViewController.swift in Sources */,
 				5390E155256B87A3000067C7 /* AdjacencyList.swift in Sources */,
 				5390E153256B87A3000067C7 /* Edge.swift in Sources */,
+				5390E161256B9EF0000067C7 /* ConfirmTripViewController.swift in Sources */,
 				5390E114256B84F6000067C7 /* AppDelegate.swift in Sources */,
 				5390E14D256B8796000067C7 /* LinkedList.swift in Sources */,
 				5390E14C256B8796000067C7 /* Queue.swift in Sources */,

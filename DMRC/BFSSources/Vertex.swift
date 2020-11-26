@@ -1,5 +1,6 @@
 public struct Vertex<T: Hashable> {
   var data: T
+  var isInterchangeVertex: Bool
 }
 
 extension Vertex: Hashable {
