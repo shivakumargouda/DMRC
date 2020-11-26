@@ -24,9 +24,7 @@ class SourceViewController: UIViewController {
                            "INA",
                            "Okhla"
     ]
-    
-    let dMRC = AdjacencyList<String>()
-    
+
     lazy var tableView: UITableView = {
         let tv = UITableView()
         tv.dataSource = self
@@ -74,6 +72,11 @@ extension SourceViewController: UITableViewDataSource, UITableViewDelegate {
         let vc = DestinationViewController()
         vc.sourceStaion = sourceStations[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+    }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+           tableView.cellForRow(at: indexPath)?.accessoryType = .none
     }
     
 }

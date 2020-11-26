@@ -54,7 +54,6 @@ class DestinationViewController: UIViewController {
         tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
-    
 }
 
 extension DestinationViewController: UITableViewDataSource, UITableViewDelegate {
@@ -78,6 +77,10 @@ extension DestinationViewController: UITableViewDataSource, UITableViewDelegate 
         confirmTripVC.sourceStation = sourceStaion
         confirmTripVC.destinationStaion = destinationStations[indexPath.row]
         self.navigationController?.pushViewController(confirmTripVC, animated: true)
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
     
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+           tableView.cellForRow(at: indexPath)?.accessoryType = .none
+    }
 }
