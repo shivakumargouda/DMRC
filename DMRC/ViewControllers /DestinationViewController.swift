@@ -13,21 +13,8 @@ import UIKit
 
 class DestinationViewController: UIViewController {
     
-    var sourceStaion = String()
-    
-    private let DestinationCellReuseIdentifier = "DestinationView"
-    
-    let destinationStations = [ "Karol Bagh",
-                                "Jhande Wallan",
-                                "RK Ashram",
-                                "Rajiv Chowk",
-                                "Barkah Ambha",
-                                "Mandi House",
-                                "New Delhi",
-                                "Patel Chowk",
-                                "INA",
-                                "Okhla"
-         ]
+    private let DestinationCellReuseIdentifier = "DestinationViewCell"
+    private let destinationStations = Dmrc.shared.destinationStations()
 
     lazy var tableView: UITableView = {
         let tv = UITableView()
@@ -64,7 +51,7 @@ extension DestinationViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DestinationCellReuseIdentifier, for: indexPath)
-        cell.textLabel?.text = destinationStations[indexPath.row]
+        cell.textLabel?.text = destinationStations[indexPath.row].description
         return cell
     }
     
@@ -73,10 +60,8 @@ extension DestinationViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let confirmTripVC = ConfirmTripViewController()
-        confirmTripVC.sourceStation = sourceStaion
-        confirmTripVC.destinationStaion = destinationStations[indexPath.row]
-        self.navigationController?.pushViewController(confirmTripVC, animated: true)
+        Dmrc.shared.destinationStaion = destinationStations[indexPath.row].description
+        self.navigationController?.pushViewController(ConfirmTripViewController(), animated: true)
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
     

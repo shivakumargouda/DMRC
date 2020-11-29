@@ -21,8 +21,8 @@ extension AdjacencyList: Graphable {
   
   public typealias Element = T
   
-    public func createVertex(data: Element, isInterchangeVertex: Bool) -> Vertex<Element> {
-        let vertex = Vertex(data: data, isInterChangeVertex: isInterchangeVertex)
+    public func createVertex(data: Element, isInterChangeVertex: Bool) -> Vertex<Element> {
+        let vertex = Vertex(data: data, isInterChangeVertex: isInterChangeVertex)
     
     if adjacencyDict[vertex] == nil {
       adjacencyDict[vertex] = []
@@ -75,9 +75,8 @@ extension AdjacencyList: Graphable {
     return result
   }
     
-    
     public func vertexFor(station: Element) -> Vertex<Element> {
-        return Vertex(data: station, isInterChangeVertex: true)
+        return Vertex(data: station, isInterChangeVertex: false)
     }
     
 }

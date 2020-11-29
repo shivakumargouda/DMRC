@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		534F8E3725745248007A19F8 /* Dmrc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F8E3625745248007A19F8 /* Dmrc.swift */; };
 		5390E114256B84F6000067C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5390E113256B84F6000067C7 /* AppDelegate.swift */; };
 		5390E11D256B84F9000067C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5390E11C256B84F9000067C7 /* Assets.xcassets */; };
 		5390E120256B84F9000067C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5390E11E256B84F9000067C7 /* LaunchScreen.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		534F8E3625745248007A19F8 /* Dmrc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dmrc.swift; sourceTree = "<group>"; };
 		5390E110256B84F6000067C7 /* DMRC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMRC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5390E113256B84F6000067C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5390E11C256B84F9000067C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53819AF9257338EE00F39469 /* ViewControllers  */ = {
+			isa = PBXGroup;
+			children = (
+				5390E15C256B91EE000067C7 /* SourceViewController.swift */,
+				5390E15E256B98E8000067C7 /* DestinationViewController.swift */,
+				5390E160256B9EF0000067C7 /* ConfirmTripViewController.swift */,
+			);
+			path = "ViewControllers ";
+			sourceTree = "<group>";
+		};
 		5390E107256B84F6000067C7 = {
 			isa = PBXGroup;
 			children = (
@@ -115,15 +127,13 @@
 		5390E112256B84F6000067C7 /* DMRC */ = {
 			isa = PBXGroup;
 			children = (
+				53819AF9257338EE00F39469 /* ViewControllers  */,
 				5390E15B256B8888000067C7 /* BFSSources */,
 				5390E113256B84F6000067C7 /* AppDelegate.swift */,
+				534F8E3625745248007A19F8 /* Dmrc.swift */,
 				5390E11C256B84F9000067C7 /* Assets.xcassets */,
 				5390E11E256B84F9000067C7 /* LaunchScreen.storyboard */,
 				5390E121256B84F9000067C7 /* Info.plist */,
-				5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */,
-				5390E15C256B91EE000067C7 /* SourceViewController.swift */,
-				5390E15E256B98E8000067C7 /* DestinationViewController.swift */,
-				5390E160256B9EF0000067C7 /* ConfirmTripViewController.swift */,
 			);
 			path = DMRC;
 			sourceTree = "<group>";
@@ -158,6 +168,7 @@
 		5390E15B256B8888000067C7 /* BFSSources */ = {
 			isa = PBXGroup;
 			children = (
+				5390E158256B87D1000067C7 /* BreadthFirstSearch.swift */,
 				5390E15A256B8863000067C7 /* Queue */,
 				5390E156256B87B5000067C7 /* Vertex.swift */,
 				5390E151256B87A3000067C7 /* AdjacencyList.swift */,
@@ -299,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5390E154256B87A3000067C7 /* Graphable.swift in Sources */,
+				534F8E3725745248007A19F8 /* Dmrc.swift in Sources */,
 				5390E152256B87A3000067C7 /* Graphable+Searchable.swift in Sources */,
 				5390E157256B87B5000067C7 /* Vertex.swift in Sources */,
 				5390E15F256B98E8000067C7 /* DestinationViewController.swift in Sources */,

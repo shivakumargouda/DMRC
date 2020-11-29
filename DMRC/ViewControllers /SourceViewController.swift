@@ -11,19 +11,8 @@ import UIKit
 
 class SourceViewController: UIViewController {
     
-    private let SourceCellReuseIdentifier = "SourceView"
-    
-    let sourceStations = [ "Karol Bagh",
-                           "Jhande Wallan",
-                           "RK Ashram",
-                           "Rajiv Chowk",
-                           "Barkah Ambha",
-                           "Mandi House",
-                           "New Delhi",
-                           "Patel Chowk",
-                           "INA",
-                           "Okhla"
-    ]
+    private let SourceCellReuseIdentifier = "SourceViewCell"
+    private let sourceStations = Dmrc.shared.allStations()
 
     lazy var tableView: UITableView = {
         let tv = UITableView()
@@ -60,7 +49,7 @@ extension SourceViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SourceCellReuseIdentifier, for: indexPath)
-        cell.textLabel?.text = sourceStations[indexPath.row]
+        cell.textLabel?.text = sourceStations[indexPath.row].description
         return cell
     }
     
@@ -69,9 +58,8 @@ extension SourceViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = DestinationViewController()
-        vc.sourceStaion = sourceStations[indexPath.row]
-        self.navigationController?.pushViewController(vc, animated: true)
+        Dmrc.shared.sourceStaion = sourceStations[indexPath.row].description
+        self.navigationController?.pushViewController(DestinationViewController(), animated: true)
         tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
     }
     
